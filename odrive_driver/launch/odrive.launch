@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="output"                default="log" />
+
+    <!-- Odrive drivers -->
+    <node name="Odrive"  pkg="odrive_driver" type="driver.py"  output="$(arg output)"  required='true'>
+    </node>
+
+
+</launch>
