@@ -1,0 +1,6 @@
+publish_tf: True
+odom_frame: 'odom'
+base_frame: 'base_link'
+wheelbase: 0.365        
+wheel_radius: 0.085      
+ppr: 1024                # encoder pulse per revolution
