@@ -3,8 +3,12 @@
     <arg name="output"                default="log" />
 
     <!-- Odrive drivers -->
-    <node name="Odrive"  pkg="odrive_driver" type="driver.py"  output="$(arg output)"  required='true'>
+    <node name="Odrive"  pkg="odrive_driver" type="driver.py"  required='true'>
+        <rosparam command="load" file="$(find odrive_driver)/config/driver.yaml" />
     </node>
 
+    <node name="Odometry"  pkg="odrive_driver" type="odom_differential.py"  required='true'>
+        <rosparam command="load" file="$(find odrive_driver)/config/odom_differential.yaml" />
+    </node>
 
 </launch>

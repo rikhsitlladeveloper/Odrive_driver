@@ -1,0 +1,4 @@
+wheel_radius: 0.085 #0.17 / 2
+wheelbase: 0.365
+max_rpm: 260        #2.31 m/s
+frequency: 20
